@@ -1,0 +1,4 @@
+"0,0,0",ClientProtocol.getBlockLocations,0,"{""offset"": ""#0"", ""length"": ""#1"", ""src"": ""#2""}","{""#1"": [""Y"", 1342177280], ""#0"": [""Y"", 0], ""#2"": [""P"", ""/tmp/hadoop-yarn/staging/shir/.staging/job_<JOBID>_0002/job.split""]}"
+"0,0,1",ClientProtocol.getServerDefaults,37,,
+"0,0,2",ClientProtocol.getBlockLocations,70,"{""offset"": ""#0"", ""length"": ""#1"", ""src"": ""#2""}","{""#1"": [""Y"", 1342177280], ""#0"": [""Y"", 0], ""#2"": [""P"", ""/terasort/in-<JOBID>-784/part-m-00322""]}"
+"0,0,3",ClientProtocol.getFileInfo,28874,"{""src"": ""#0""}","{""#0"": [""P"", ""/terasort/out-<JOBID>-784/_temporary/1/_temporary/attempt_<JOBID>_0002_m_000322_0""]}"

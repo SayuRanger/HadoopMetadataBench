@@ -1,0 +1,25 @@
+# only for datanode launch test
+CC.1 10.0.0.14:50000
+RM.1 10.0.0.13:11001
+rpc.1 10.0.0.14:50001
+
+simpool.0 10.0.0.14:40017
+simpool.1 10.0.0.14:40018
+simpool.2 10.0.0.14:40019
+simpool.3 10.0.0.14:40020
+simpool.4 10.0.0.14:40021
+simpool.5 10.0.0.15:40017
+simpool.6 10.0.0.15:40018
+simpool.7 10.0.0.15:40019
+simpool.8 10.0.0.15:40020
+simpool.9 10.0.0.15:40021
+
+#cut down executing time simulation.
+>nmfile=conf/nm.csv
+>throttle=n
+>brdfactor=1
+#mapper/reducer parallel factor
+>parallel=1
+#Sleep a while before starting next job
+>jobinterval=50
+>amsim=am-0002-01

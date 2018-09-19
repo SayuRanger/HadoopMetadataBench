@@ -1,0 +1,21 @@
+package ganyi.hadoop.replayer.rpc.param;
+
+import org.apache.hadoop.yarn.api.protocolrecords.AllocateRequest;
+import org.apache.hadoop.yarn.api.records.ResourceRequest;
+import org.json.JSONObject;
+
+import java.util.List;
+
+public class AllocateRequestParam {
+    public static AllocateRequest parseParam(JSONObject object) {
+        int responseID;
+        float progress;
+        List<ResourceRequest> askList;
+        responseID = UtilJson.getInt(object, "response_id");
+        progress = UtilJson.getFloat(object, "progress");
+        askList = UtilJson.getResourceRequestList(object, "ask");
+				if (askList != null) System.out.println("vdr askList size=" + askList.size() + ", nc=" + askList.get(0).getNumContainers());
+        return AllocateRequest.newInstance(responseID, progress, askList, null, null);
+    }
+}
+

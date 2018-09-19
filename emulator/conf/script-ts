@@ -1,0 +1,16 @@
+dn.all dn.all
+run-0001-01.single run-0001-01.single
+nm-0001-01-nma.single nm-0001-01-nma.single
+am-0001-01.[0,0,0@0,0,28] am-0001-01.[0,0,0@0,0,28]
+nm-0001-01-nmb.all nm-0001-01-nmb.all
+mapper-0001-01.all mapper-0001-01.first
+am-0001-01.[0,0,29@0,0,30] mapper-0001-01.last
+am-0001-01.[0,0,31@2,0,43] am-0001-01.[0,0,31@2,0,43]
+run-0002-01.single run-0002-01.single
+nm-0002-01-nma.single nm-0002-01-nma.single
+am-0002-01.[0,0,0@0,0,20] am-0002-01.[0,0,0@0,0,20]
+nm-0002-01-nmb.all nm-0002-01-nmb.all
+mapper-0002-01.all mapper-0002-01.first
+am-0002-01.[0,0,21@0,0,22] mapper-0002-01.last
+reducer-0002-01.all reducer-0002-01.all
+am-0002-01.[0,0,23@2,0,35] am-0002-01.[0,0,23@2,0,35]

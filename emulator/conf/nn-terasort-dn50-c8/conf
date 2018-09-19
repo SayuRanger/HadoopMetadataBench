@@ -1,0 +1,27 @@
+NN.1 10.0.0.13:9000
+CC.1 10.0.0.14:50000
+
+simpool.0 10.0.0.14:40017
+simpool.1 10.0.0.14:40018
+simpool.2 10.0.0.14:40019
+simpool.3 10.0.0.14:40020
+simpool.4 10.0.0.14:40021
+simpool.5 10.0.0.15:40017
+simpool.6 10.0.0.15:40018
+simpool.7 10.0.0.15:40019
+simpool.8 10.0.0.15:40020
+simpool.9 10.0.0.15:40021
+
+# cut down executing time simulation.
+>dnfile=conf/dn.csv
+>throttle=n
+>dnwait=10000
+>brdfactor=1
+>heartbeatinterval=3000
+>dnperround=1000
+#>throttle=2000
+#mapper/reducer parallel factor
+>parallel=8
+#Sleep a while before starting next job
+>jobinterval=50
+>nnlatmap=true

@@ -1,0 +1,10 @@
+"0,0,0",ClientProtocol.getFileInfo,0,"{""src"": ""#0""}","{""#0"": [""P"", ""/terasort/out-<JOBID>-198/_partition.lst""]}"
+"0,0,1",ClientProtocol.getFileInfo,234,"{""src"": ""#0""}","{""#0"": [""P"", ""/terasort/out-<JOBID>-198""]}"
+"0,0,2",ClientProtocol.getFileInfo,75,"{""src"": ""#0""}","{""#0"": [""Y"", ""/terasort""]}"
+"0,0,3",ClientProtocol.getFileInfo,110,"{""src"": ""#0""}","{""#0"": [""Y"", ""/""]}"
+"0,0,4",ClientProtocol.getBlockLocations,74,"{""offset"": ""#0"", ""length"": ""#1"", ""src"": ""#2""}","{""#2"": [""R"", ""L-SS,,, nm-0002-01-f10-p5-s3.0,0,0,0,,, s,,, ClientProtocol.getFileInfo,src""], ""#0"": [""Y"", 0], ""#1"": [""Y"", 1342177280]}"
+"0,0,5",ClientProtocol.getServerDefaults,205,,
+"0,0,6",ClientProtocol.getFileInfo,3,"{""src"": ""#0""}","{""#0"": [""P"", ""/tmp/hadoop-yarn/staging/shir/.staging/job_<JOBID>_0002/job.jar""]}"
+"0,0,7",ClientProtocol.getBlockLocations,69,"{""offset"": ""#0"", ""length"": ""#1"", ""src"": ""#2""}","{""#2"": [""R"", ""L-SS,,, nm-0002-01-f10-p5-s3.0,0,0,6,,, s,,, ClientProtocol.getFileInfo,src""], ""#0"": [""Y"", 0], ""#1"": [""Y"", 1342177280]}"
+"0,0,8",ClientProtocol.getFileInfo,263,"{""src"": ""#0""}","{""#0"": [""P"", ""/tmp/hadoop-yarn/staging/shir/.staging/job_<JOBID>_0002/job.xml""]}"
+"0,0,9",ClientProtocol.getBlockLocations,2,"{""offset"": ""#0"", ""length"": ""#1"", ""src"": ""#2""}","{""#2"": [""R"", ""L-SS,,, nm-0002-01-f10-p5-s3.0,0,0,8,,, s,,, ClientProtocol.getFileInfo,src""], ""#0"": [""Y"", 0], ""#1"": [""Y"", 1342177280]}"
