@@ -1,0 +1,132 @@
+<?xml version="1.0"?>
+<!--
+  Licensed under the Apache License, Version 2.0 (the "License");
+  you may not use this file except in compliance with the License.
+  You may obtain a copy of the License at
+
+    http://www.apache.org/licenses/LICENSE-2.0
+
+  Unless required by applicable law or agreed to in writing, software
+  distributed under the License is distributed on an "AS IS" BASIS,
+  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+  See the License for the specific language governing permissions and
+  limitations under the License. See accompanying LICENSE file.
+-->
+<configuration>
+
+<!-- Site specific YARN configuration properties -->
+<!-- Site specific YARN configuration properties -->
+<!--
+  <property>
+    <name>yarn.nodemanager.aux-services</name>
+    <vlue>mapreduce_shuffle</value>
+  </property>
+-->
+  <!-- RM hostname + default ports -->
+  <property>
+    <name>yarn.resourcemanager.hostname</name>
+    <value>node220-3</value>
+  </property>
+
+  <!-- RM customize all ports manually -->
+  <property>
+    <name>yarn.resourcemanager.address</name>
+    <value>node220-3:11001</value>
+  </property>
+
+  <property>
+    <name>yarn.resourcemanager.scheduler.address</name>
+    <value>node220-3:11002</value>
+  </property>
+
+  <property>
+    <name>yarn.resourcemanager.resource-tracker.address</name>
+    <value>node220-3:11003</value>
+  </property>
+
+  <property>
+    <name>yarn.resourcemanager.admin.address</name>
+    <value>node220-3:11004</value>
+  </property>
+
+  <property>
+    <name>yarn.resourcemanager.webapp.address</name>
+    <value>node220-3:11005</value>
+  </property>
+
+    <property>
+      <name>yarn.nodemanager.resource.cpu-vcores</name>
+      <value>4</value>
+    </property>
+    <property>
+      <name>yarn.nodemanager.resource.memory-mb</name>
+      <value>6500</value>
+    </property>
+    <property>
+      <name>yarn.nodemanager.vmem-check-enabled</name>
+      <value>false</value>
+    </property>
+
+    <property>
+      <name>yarn.scheduler.minimum-allocation-mb</name>
+      <value>5120</value>
+    </property>
+    
+    <property>
+      <name>yarn.scheduler.maximum-allocation-mb</name>
+      <value>5120</value>
+    </property>
+ 
+    <property>
+      <name>yarn.nodemanager.container-executor.class</name>
+      <value>org.apache.hadoop.yarn.server.nodemanager.DefaultContainerExecutor</value>
+    </property>
+
+		<!-- config of TCP connection between CC and RM -->
+		<property>
+			<name>yarn.resourcemanager.tcpamlaucher.address</name>
+			<value>10.0.0.14</value>
+		</property>
+
+		<property>
+			<name>yarn.resourcemanager.tcpamlaucher.port</name>
+			<value>50001</value>
+		</property>
+
+    <!-- RM scheduler class -->
+    <property>
+        <name>yarn.resourcemanager.scheduler.class</name>
+        <value>org.apache.hadoop.yarn.server.resourcemanager.scheduler.capacity.CapacityScheduler</value>
+    </property>
+		<!--
+		<property>
+			<name>yarn.resourcemanager.client.thread-count</name>
+			<value>100</value>
+		</property>
+		-->
+    <!--
+    <property>
+      <name>yarn.resourcemanager.scheduler.class</name>
+      <value>org.apache.hadoop.yarn.server.resourcemanager.scheduler.fifo.FifoScheduler</value>
+    </property>
+    -->
+  <!-- RM -->
+	<!--
+  <property>
+    <name>yarn.scheduler.minimum-allocation-mb</name>
+    <value>4096</value>
+  </property>
+
+  <property>
+    <name>yarn.scheduler.maximum-allocation-mb</name>
+    <value>4096</value>
+  </property>
+-->
+  <!-- NM -->
+	<!--
+  <prty>
+    <name>yarn.nodemanager.resource.memory-mb</name>
+    <value>14000</value>
+  </property>
+-->
+</configuration>
